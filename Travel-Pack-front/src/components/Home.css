@@ -1,0 +1,87 @@
+/* Home.css */
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .background-image {
+    animation: fadeInOut 5s infinite;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bg-cover {
+    background-size: cover;
+  }
+  
+  .bg-center {
+    background-position: center;
+  }
+  
+  .transition-opacity {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Home.css or a new CSS file */
+/* Home.css or a new CSS file */
+@keyframes jump-in {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.jump-in {
+  animation: jump-in 1s ease-in-out;
+}
+
+@media (max-width: 640px) {
+ .head{
+  font-size: 50px;
+  text-align: center;
+ 
+ }
+.para1{
+  font-size:15px;
+  text-align: center;
+}
+.content{
+  margin-bottom: 15px;
+}
+
+.search{
+  margin-left: 40px;
+}
+
+}
+
+@media (max-width: 770px) and (min-width: 640px) {
+  .search{
+    margin-left: 100px;
+  }
+
+  .head{
+    font-size: 60px;
+  }
+}
+

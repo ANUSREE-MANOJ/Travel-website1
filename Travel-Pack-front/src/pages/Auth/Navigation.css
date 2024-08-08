@@ -1,0 +1,141 @@
+
+.navbar {
+  width: 100%;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Default background */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color:blue; /* Background color when scrolled */
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+  color: #ddd;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Media query for responsive design */
+/* @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+  
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar.menu-open .menu {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+.logo{
+  
+    font-family: "Edu AU VIC WA NT Hand";
+    font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style: normal; */
+  
+}
+
+
+/* Navigation.css */
+
+
+
+/* Navigation.css */
+nav {
+  transition: background-color 0.3s;
+}
+
+/* Ensure dropdown and menu have full opacity */
+.navbar-item {
+  background-color: transparent; /* No opacity applied here */
+}
+
+.navbar-dropdown,
+.navbar-menu {
+  background-color: white; /* Full opacity */
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .mobile-menu {
+
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure full width */
+  }
+
+  .mobile-menu li {
+    width: 100%; /* Make each item take full width */
+    text-align: center; /* Center text */
+    padding: 8px 0; /* Add some padding for better appearance */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional: Add a divider between items */
+  }
+
+  .navbar-item {
+
+    width: 100%; /* Ensure links take full width */
+    text-decoration: none; /* Remove default link styling */
+    color: black; /* Ensure text is readable */
+    padding: 10px 0; /* Add padding for touch targets */
+
+  }
+
+  .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+  }
+
+  .logo{
+    color: white;
+
+  }
+}

@@ -1,0 +1,62 @@
+/* Add this to your HotelEdits.css file */
+
+/* Ensure that table is scrollable on small screens */
+.overflow-x-auto {
+    overflow-x: auto;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 640px) {
+    .hidden-sm {
+      display: none;
+    }
+  
+    .block-sm {
+      display: block;
+    }
+  
+    .table-mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    .table-mobile thead {
+      display: none;
+    }
+  
+    .table-mobile tbody tr {
+      display: block;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .table-mobile td {
+      display: block;
+      text-align: right;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      box-sizing: border-box;
+    }
+  
+    .table-mobile td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 0.5rem;
+      font-weight: bold;
+      text-align: left;
+      top: 0;
+      bottom: 0;
+      background: #f0f0f0;
+      z-index: 1;
+    }
+  
+    .modal-content {
+      width: 90%;
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  
